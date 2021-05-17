@@ -13,7 +13,7 @@ struct ContentView: View {
         TabView {
             QueryHistoryView(pedometer: observer)
                 .tabItem { Text("Query histories") }
-            MonitoringView()
+            MonitoringView(pedometer: observer)
                 .tabItem { Text("Monitoring") }
         }
     }
