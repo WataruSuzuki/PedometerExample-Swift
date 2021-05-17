@@ -2,19 +2,24 @@
 //  QueryHistoryView.swift
 //  PedometerExample
 //
-//  Created by watsuzuk on 2021/05/28.
+//  Created by WataruSuzuki on 2021/05/28.
 //
 
 import SwiftUI
 
 struct QueryHistoryView: View {
+    @ObservedObject var pedometer: PedometerObserver
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("steps: \(pedometer.histories.numberOfSteps)")
+            Text("distance: \(pedometer.histories.distance?.doubleValue ?? 0)")
+        }
     }
 }
 
 struct QueryHistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        QueryHistoryView()
+        QueryHistoryView(pedometer: PedometerObserver())
     }
 }

@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let observer = PedometerObserver()
     var body: some View {
         TabView {
+            QueryHistoryView(pedometer: observer)
+                .tabItem { Text("Query histories") }
             MonitoringView()
                 .tabItem { Text("Monitoring") }
-            QueryHistoryView()
-                .tabItem { Text("Query histories") }
         }
     }
 }
