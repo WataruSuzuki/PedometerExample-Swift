@@ -13,6 +13,8 @@
 		75207B232660867C002C96DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75207B222660867C002C96DD /* Preview Assets.xcassets */; };
 		75207B2E2660867D002C96DD /* PedometerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B2D2660867D002C96DD /* PedometerExampleTests.swift */; };
 		75207B392660867D002C96DD /* PedometerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B382660867D002C96DD /* PedometerExampleUITests.swift */; };
+		75207B4726608A5B002C96DD /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B4626608A5B002C96DD /* MonitoringView.swift */; };
+		75207B4926608A88002C96DD /* QueryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B4826608A88002C96DD /* QueryHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		75207B342660867D002C96DD /* PedometerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedometerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75207B382660867D002C96DD /* PedometerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerExampleUITests.swift; sourceTree = "<group>"; };
 		75207B3A2660867D002C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75207B4626608A5B002C96DD /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
+		75207B4826608A88002C96DD /* QueryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				75207B1B2660867B002C96DD /* PedometerExampleApp.swift */,
 				75207B1D2660867B002C96DD /* ContentView.swift */,
+				75207B4626608A5B002C96DD /* MonitoringView.swift */,
+				75207B4826608A88002C96DD /* QueryHistoryView.swift */,
 				75207B1F2660867C002C96DD /* Assets.xcassets */,
 				75207B242660867C002C96DD /* Info.plist */,
 				75207B212660867C002C96DD /* Preview Content */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75207B4926608A88002C96DD /* QueryHistoryView.swift in Sources */,
 				75207B1E2660867B002C96DD /* ContentView.swift in Sources */,
 				75207B1C2660867B002C96DD /* PedometerExampleApp.swift in Sources */,
+				75207B4726608A5B002C96DD /* MonitoringView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
