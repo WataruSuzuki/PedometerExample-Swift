@@ -16,6 +16,13 @@
 		75207B4726608A5B002C96DD /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B4626608A5B002C96DD /* MonitoringView.swift */; };
 		75207B4926608A88002C96DD /* QueryHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B4826608A88002C96DD /* QueryHistoryView.swift */; };
 		75207B4B26608D54002C96DD /* PedometerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B4A26608D54002C96DD /* PedometerObserver.swift */; };
+		75207B532660B323002C96DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75207B522660B323002C96DD /* WidgetKit.framework */; };
+		75207B552660B323002C96DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75207B542660B323002C96DD /* SwiftUI.framework */; };
+		75207B582660B323002C96DD /* SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75207B572660B323002C96DD /* SmallWidget.swift */; };
+		75207B5B2660B324002C96DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75207B5A2660B324002C96DD /* Assets.xcassets */; };
+		75207B5D2660B324002C96DD /* SmallWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 75207B592660B323002C96DD /* SmallWidget.intentdefinition */; };
+		75207B5E2660B324002C96DD /* SmallWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 75207B592660B323002C96DD /* SmallWidget.intentdefinition */; };
+		75207B612660B324002C96DD /* SmallWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75207B502660B323002C96DD /* SmallWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,28 @@
 			remoteGlobalIDString = 75207B172660867B002C96DD;
 			remoteInfo = PedometerExample;
 		};
+		75207B5F2660B324002C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75207B102660867B002C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75207B4F2660B323002C96DD;
+			remoteInfo = SmallWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75207B622660B324002C96DD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				75207B612660B324002C96DD /* SmallWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		75207B182660867B002C96DD /* PedometerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedometerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +79,13 @@
 		75207B4626608A5B002C96DD /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
 		75207B4826608A88002C96DD /* QueryHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryHistoryView.swift; sourceTree = "<group>"; };
 		75207B4A26608D54002C96DD /* PedometerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerObserver.swift; sourceTree = "<group>"; };
+		75207B502660B323002C96DD /* SmallWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmallWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		75207B522660B323002C96DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		75207B542660B323002C96DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		75207B572660B323002C96DD /* SmallWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidget.swift; sourceTree = "<group>"; };
+		75207B592660B323002C96DD /* SmallWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SmallWidget.intentdefinition; sourceTree = "<group>"; };
+		75207B5A2660B324002C96DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75207B5C2660B324002C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +110,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75207B4D2660B323002C96DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75207B552660B323002C96DD /* SwiftUI.framework in Frameworks */,
+				75207B532660B323002C96DD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +128,8 @@
 				75207B1A2660867B002C96DD /* PedometerExample */,
 				75207B2C2660867D002C96DD /* PedometerExampleTests */,
 				75207B372660867D002C96DD /* PedometerExampleUITests */,
+				75207B562660B323002C96DD /* SmallWidget */,
+				75207B512660B323002C96DD /* Frameworks */,
 				75207B192660867B002C96DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +140,7 @@
 				75207B182660867B002C96DD /* PedometerExample.app */,
 				75207B292660867D002C96DD /* PedometerExampleTests.xctest */,
 				75207B342660867D002C96DD /* PedometerExampleUITests.xctest */,
+				75207B502660B323002C96DD /* SmallWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +186,26 @@
 			path = PedometerExampleUITests;
 			sourceTree = "<group>";
 		};
+		75207B512660B323002C96DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75207B522660B323002C96DD /* WidgetKit.framework */,
+				75207B542660B323002C96DD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75207B562660B323002C96DD /* SmallWidget */ = {
+			isa = PBXGroup;
+			children = (
+				75207B572660B323002C96DD /* SmallWidget.swift */,
+				75207B592660B323002C96DD /* SmallWidget.intentdefinition */,
+				75207B5A2660B324002C96DD /* Assets.xcassets */,
+				75207B5C2660B324002C96DD /* Info.plist */,
+			);
+			path = SmallWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,10 +216,12 @@
 				75207B142660867B002C96DD /* Sources */,
 				75207B152660867B002C96DD /* Frameworks */,
 				75207B162660867B002C96DD /* Resources */,
+				75207B622660B324002C96DD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				75207B602660B324002C96DD /* PBXTargetDependency */,
 			);
 			name = PedometerExample;
 			productName = PedometerExample;
@@ -195,6 +264,23 @@
 			productReference = 75207B342660867D002C96DD /* PedometerExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		75207B4F2660B323002C96DD /* SmallWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75207B652660B324002C96DD /* Build configuration list for PBXNativeTarget "SmallWidgetExtension" */;
+			buildPhases = (
+				75207B4C2660B323002C96DD /* Sources */,
+				75207B4D2660B323002C96DD /* Frameworks */,
+				75207B4E2660B323002C96DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmallWidgetExtension;
+			productName = SmallWidgetExtension;
+			productReference = 75207B502660B323002C96DD /* SmallWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,6 +301,9 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 75207B172660867B002C96DD;
 					};
+					75207B4F2660B323002C96DD = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 75207B132660867B002C96DD /* Build configuration list for PBXProject "PedometerExample" */;
@@ -233,6 +322,7 @@
 				75207B172660867B002C96DD /* PedometerExample */,
 				75207B282660867D002C96DD /* PedometerExampleTests */,
 				75207B332660867D002C96DD /* PedometerExampleUITests */,
+				75207B4F2660B323002C96DD /* SmallWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +351,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75207B4E2660B323002C96DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75207B5B2660B324002C96DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,6 +368,7 @@
 			files = (
 				75207B4B26608D54002C96DD /* PedometerObserver.swift in Sources */,
 				75207B4926608A88002C96DD /* QueryHistoryView.swift in Sources */,
+				75207B5E2660B324002C96DD /* SmallWidget.intentdefinition in Sources */,
 				75207B1E2660867B002C96DD /* ContentView.swift in Sources */,
 				75207B1C2660867B002C96DD /* PedometerExampleApp.swift in Sources */,
 				75207B4726608A5B002C96DD /* MonitoringView.swift in Sources */,
@@ -292,6 +391,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75207B4C2660B323002C96DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75207B5D2660B324002C96DD /* SmallWidget.intentdefinition in Sources */,
+				75207B582660B323002C96DD /* SmallWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +412,11 @@
 			isa = PBXTargetDependency;
 			target = 75207B172660867B002C96DD /* PedometerExample */;
 			targetProxy = 75207B352660867D002C96DD /* PBXContainerItemProxy */;
+		};
+		75207B602660B324002C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75207B4F2660B323002C96DD /* SmallWidgetExtension */;
+			targetProxy = 75207B5F2660B324002C96DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +540,7 @@
 		75207B3E2660867D002C96DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +563,7 @@
 		75207B3F2660867D002C96DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +663,48 @@
 			};
 			name = Release;
 		};
+		75207B632660B324002C96DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F35G39V2UB;
+				INFOPLIST_FILE = SmallWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PedometerExample.SmallWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75207B642660B324002C96DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F35G39V2UB;
+				INFOPLIST_FILE = SmallWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PedometerExample.SmallWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +740,15 @@
 			buildConfigurations = (
 				75207B442660867D002C96DD /* Debug */,
 				75207B452660867D002C96DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75207B652660B324002C96DD /* Build configuration list for PBXNativeTarget "SmallWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75207B632660B324002C96DD /* Debug */,
+				75207B642660B324002C96DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
